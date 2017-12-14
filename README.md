@@ -172,7 +172,7 @@ dot -Tpdf hepatitis1.dot -o hepatitis1.pdf
 ```
 
 The result is a PDF with rendered graph similar to the following one (this one has been actually rendered with `-Tsvg` instead of `-Tpdf`):
-![Hepatitis decision tree](img/hepatitis/hepatitis_example.svg)
+![Hepatitis decision tree](img/hepatitis_example.svg)
 
 
 ### Train and evaluate
