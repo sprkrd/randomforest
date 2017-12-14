@@ -44,7 +44,7 @@ def feature_rank(dataset, ntrees, f, minsplit=10):
     frank = "\\begin{enumerate}\n" + frank + "\n\\end{enumerate}"
     return frank.replace("_","\\_")
 
-def accuracy_and_time(dataset, ntrees, f, minsplit=10):
+def accuracy_and_time(dataset, ntrees, f, minsplit=4):
     cmd = ["./build/train_and_test", "-M{}".format(ntrees), "-F{}".format(f),
            "-N{}".format(minsplit), "--cv", "5", dataset]
     out = subprocess.check_output(cmd).decode("ascii")
