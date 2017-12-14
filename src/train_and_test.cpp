@@ -177,8 +177,8 @@ Options parse_argv(int argc, char* argv[])
       if (cv) options.cv = args::get(cv);
       if (json) options.save = args::get(json);
       if (dot) options.dot_prefix = args::get(dot);
-      if (dataset) options.dataset = args::get(dataset);
     }
+    if (dataset) options.dataset = args::get(dataset);
   }
   catch (args::Help)
   {

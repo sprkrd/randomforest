@@ -3,6 +3,7 @@
 
 This is my implementation of Random Forest for classification in C++11.
 It accepts several parameters and is able to learn and classify data sets in CSV format.
+Our Random Forests can deal with both numerical and categorical attributes.
 Moreover, trees can be stored in a JSON file and/or visualized as .dot
 graphs. The implementation does very basic handling of missing values:
 in the training set, it substitutes them by the class median (for
@@ -170,9 +171,8 @@ file:
 dot -Tpdf hepatitis1.dot -o hepatitis1.pdf
 ```
 
-The result is a PDF with rendered graph similar to the following one (this one has been actually rendered with `-Tsvg` instead of `-Tpdf`:
-![Hepatitis decision tree](img/hepatitis1.svg)
-
+The result is a PDF with rendered graph similar to the following one (this one has been actually rendered with `-Tsvg` instead of `-Tpdf`):
+![Hepatitis decision tree](img/hepatitis/hepatitis_example.svg)
 
 
 ### Train and evaluate
@@ -219,4 +219,9 @@ the same data the model has been trained with, so it is only natural that the
 accuracy is that high. It goes without saying that the reported accuracy is meaningful
 only when the learner has not seen the test data (this example is just for illustration
 purposes).
+
+## To-do
+
+The source code has not been fully documented.
+
 
