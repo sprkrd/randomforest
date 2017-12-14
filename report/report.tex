@@ -304,7 +304,16 @@ maintaining the same value of $ M $, but with $ F = 3 $:
 \end{enumerate}
 
 We can see that now petal-length and petal-width have gained much more relevance than the other
-two features.
+two features. In fact, this has much sense, since the petal-length alone can be used to discriminate
+away one of the three classes. Not only this, but it plays a crucial role for discriminating
+the remaining two. Fig.~\ref{fig:iris-tree} shows one of the learnt trees.
+
+\begin{figure*}[htbp]
+\centering
+\includegraphics[width=0.75\textwidth]{iris1.pdf}
+\caption{One of the learnt trees of the Iris data set}
+\label{fig:iris-tree}
+\end{figure*}
 
 The full list of rankings and scores can be found in the \texttt{experiment\_results} folder. We
 refer the reader there.
